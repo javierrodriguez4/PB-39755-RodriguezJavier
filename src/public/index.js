@@ -3,7 +3,7 @@ let user = '';
 let chatBox = document.getElementById('chatBox');
 
 Swal.fire({
-    title: 'Chat de Lonne Open',
+    title: 'Bienvenido a Apple chat',
     input: 'email', 
     text: 'Ingrese su Correo Electrónico para comenzar', 
     inputValidator: value => {  

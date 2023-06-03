@@ -12,7 +12,17 @@
 </head>
 
 <body>
-    <ul class="nav nav-tabs">
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+        <img class="logo-nav" src="../img/logo.ico" alt='Apple' />
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="/">Inicio</a>
         </li>
@@ -39,7 +49,13 @@
         </li>
         {{/ifEqual}}
         {{/if}}
-    </ul>
+        <a href="/chat">
+            <img src="../img/chat.png" class="WhatsApp" alt="Chat icono" />
+        </a>
+      </ul>
+    </div>
+  </div>
+</nav>
 
     {{{ body }}}
 
@@ -48,7 +64,7 @@
     <div class="footer">
         <footer class='top'>
             <a href='/'>
-                <img src="../img/logo.ico" alt='Lonne Open' />
+                <img src="../img/logo.ico" alt='Apple' />
             </a>            
         </footer>
         </footer>
@@ -65,10 +81,6 @@
                 <img src="../assets/icons/nodejs.png" alt="logo nodejs" />
             </section>
         </footer>
-        <a href="/chat">
-            <img src="../img/chat.png" class="WhatsApp" alt="Chat icono" />
-        </a>
-
     </div>
 
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
