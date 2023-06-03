@@ -87,7 +87,7 @@
     position: fixed;
     left: 1.5rem;
     bottom: 1.5rem;
-    width: 3.5rem;
+    width: 7rem;
     z-index: 10;
     transition: transform .2s ease-in-out;
 }
@@ -151,5 +151,13 @@
   }
 
   .logo-nav{
-    width: 50px;
+    width: 70px;
   }
+
+  .custom-card {
+    background-color: black;
+    color: white;
+}
+.item-table{
+    color: aliceblue;
+}
