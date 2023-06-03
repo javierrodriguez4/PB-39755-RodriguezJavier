@@ -1,7 +1,7 @@
 {
   "name": "Backend-coderhouse",
   "version": "2.0.0",
-  "description": "Servidores Web + Express Avanzado",
+  "description": "",
   "main": "start.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -12,7 +12,7 @@
     "type": "git",
     "url": "git+hhttps://github.com/javierrodriguez4/PB-39755-RodriguezJavier.git"
   },
-  "author": "Alejandro Di Stefano",
+  "author": "Javier Rodriguez",
   "license": "ISC",
   "bugs": {
     "url": ""
