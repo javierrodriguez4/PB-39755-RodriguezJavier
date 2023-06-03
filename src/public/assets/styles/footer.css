@@ -1,28 +1,3 @@
-/* footer{
-    position: sticky;
-    margin-bottom: 0;
-    background-color: var(--first);
-    padding: 2rem 4rem;
-}
-
-footer p{
-    color: var(--light);
-    font-family: var(--fontB);
-    font-size: 1.2rem;
-    text-align: center;
-}
-footer a li{
-    text-decoration: none;
-    list-style: none;
-    color: var(--light);
-}
-footer img{
-    width: 4rem;
-}
-.iconos-social img {
-    max-width: 3rem;
-} */
-
 .footer{
     position: sticky;
     margin-bottom: 0;
@@ -34,22 +9,23 @@ footer img{
     font-size: 1rem;
     text-align: center;
 }
-.iconos-social{
+.iconos-stack{
     display: flex;
     justify-content: center;
     padding: 1rem;
 }
-.iconos-social> img{
-    width: 3.5rem;
+.iconos-stack> img{
+    width: 5rem;
     margin: 0 1rem;
     padding: .5rem;
     transition: transform .2s ease-in-out; 
 }
 
-.iconos-social> img:hover{
+.iconos-stack> img:hover{
     cursor: pointer;
     transform: scale(1.3); 
 }
+
 
 footer{
     display: flex;
