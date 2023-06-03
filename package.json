@@ -1,5 +1,5 @@
 {
-  "name": "backend-alejandrodistefano",
+  "name": "Backend-coderhouse",
   "version": "2.0.0",
   "description": "Servidores Web + Express Avanzado",
   "main": "start.js",
@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Drako01/backend-AlejandroDiStefano.git"
+    "url": "git+hhttps://github.com/javierrodriguez4/PB-39755-RodriguezJavier.git"
   },
   "author": "Alejandro Di Stefano",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Drako01/backend-AlejandroDiStefano/issues"
+    "url": ""
   },
-  "homepage": "https://github.com/Drako01/backend-AlejandroDiStefano#readme",
+  "homepage": "",
   "dependencies": {
     "bcrypt": "^5.1.0",
     "connect-mongo": "^5.0.0",
