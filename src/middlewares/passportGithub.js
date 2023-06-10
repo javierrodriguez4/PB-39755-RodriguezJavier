@@ -27,7 +27,7 @@ const initializePassport = () => {
 
             return done(null, newUser);
         } catch (err) {
-            return done('Error to login with GitHub');
+            return done(err);
         }
     }));
 
