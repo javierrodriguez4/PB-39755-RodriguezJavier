@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/assets/styles/styles.css">
+</head>
+
+<body>
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/">Inicio</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/products">Productos</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link{{#ifEqual cart.length 0}} disabled{{/ifEqual}}" href="/carts">Carrito <i
+                    class="fa fa-cart-plus"></i></a>
+        </li>
+        {{#if user}}
+        <li class="nav-item ">
+            <a class="nav-link premium" href="/users/profile/documents">Premium</a>
+        </li>
+        {{/if}}
+        {{#if user.role}}
+        {{#ifEqual user.role "admin"}}
+        <li class="nav-item">
+            <a class="nav-link green" href="/admin_panel">Panel Administrador</a>
+        </li>
+        <li class="nav-item ">
+            <a class="nav-link violet" href="/docs-api">Documentar API con Swagger</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/mockingproducts">Crear 100 Productos con Mocking</a>
+        </li>
+        {{/ifEqual}}
+        {{/if}}
+
+        {{#if user}}
+        {{#if user.premium}}
+        <li class="nav-item">
+            <a class="nav-link premium">{{user.first_name}} {{user.last_name}} {{user.user.first_name}} </a>
+        </li>
+        {{else}}
+        <li class="nav-item">
+            <a class="nav-link green">{{user.first_name}} {{user.last_name}} {{user.user.first_name}}</a>
+        </li>
+        {{/if}}
+
+        <li class="nav-item ">
+            <a class="nav-link red" href="/logout">Logout <i class="fa fa-sign-out"></i> </a>
+        </li>
+        {{else}}
+        <li class="nav-item">
+            <a class="nav-link green" href="/login">Login <i class="fa fa-sign-in"></i></a>
+        </li>
+        {{/if}}
+        <li class="nav-item">
+            <a class="nav-link">
+                Dark Mode
+                <button class="darkModeSwitch" id="switch">
+                    <span></span>
+                    <span></span>
+                </button>
+            </a>
+        </li>
+    </ul>
+
+    {{{ body }}}
+
+
+    <div id="history"></div>
+    <div class="footer">
+        <footer class='top'>
+            <a href='/'>
+                <img src="/img/logo.ico" alt='Lonne Open' />
+            </a>
+        </footer>
+        <footer class='bottom'>
+            <div class='legal'>
+                <p>
+                    &copy; Alejandro Di Stefano | Entrega Final | Curso de BackEnd en CoderHouse | Comisión #39755 | Año
+                    <span id="anio"></span>
+                </p>
+            </div>
+            <section class='iconos-social links'>
+                <img src="/assets/icons/whatsapp.svg" alt="icono" />
+                <img src="/assets/icons/instagram.svg" alt="icono" />
+                <img src="/assets/icons/facebook.svg" alt="icono" />
+            </section>
+        </footer>
+        {{#if user}}
+        <a href="/chat">
+            <img src="/img/chat.png" class="WhatsApp" alt="Chat icono" />
+        </a>
+        {{/if}}
+    </div>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <!-- Scripts de Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+        integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+        integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+        crossorigin="anonymous"></script>
+    <script src="/js/darck.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const spanAnio = document.getElementById("anio");
+            const fechaActual = new Date();
+            const anioActual = fechaActual.getFullYear();
+            spanAnio.textContent = anioActual;
+        });
+    </script>
+</body>
+
+</html>
