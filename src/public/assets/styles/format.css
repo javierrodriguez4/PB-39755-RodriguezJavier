@@ -1,7 +1,7 @@
 /* Variables */
 :root {
     /* Colores */
-    --first: #90A755;
+    --first: #000000;
     --second: #f5f5f5;
     --third: #3d4b19;
     --fourth: #7d895d;
@@ -147,6 +147,3 @@ button.swal2-styled::after{
     border-radius: 0.4rem;
     vertical-align: middle;
 }
-
-
-/* 2023 - Autor: Alejandro Daniel Di Stefano */

@@ -1,8 +1,8 @@
 {
-  "name": "backend-alejandrodistefano",
-  "version": "4.3.2",
+  "name": "programacion-backend",
+  "version": "1.0.0",
   "type": "module",
-  "description": "eCommerce para Venta de Productos de Tenis",
+  "description": "Apple ecommerce",
   "main": "start.js",
   "scripts": {
     "test": "mocha test/**/*.test.js",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Drako01/backend-AlejandroDiStefano.git"
+    "url": "git+https://github.com/javierrodriguez4/Programacion-Backend"
   },
   "keywords": [
     "eCommerce",
@@ -50,13 +50,13 @@
     "Swagger-ui-express",
     "Sweetalert2"
   ],
-  "readme": "# Backend por Alejandro Daniel DiStefano\n\n## eCommerce para Venta de Productos de Tenis\n\n### Tecnologías Utilizadas\n\n- NodeJS\n- Express\n- MongoDB\n- Mongoose\n- Handlebars\n- Socket.io\n- Swagger\n- API\n- REST\n- JWT\n- Passport\n- Twilio\n- Mailgen\n- Nodemailer\n- Winston\n- Faker\n- Multer\n- Bcrypt\n- Cookie-parser\n- Express-session\n- Connect-mongo\n- Method-override\n- Cors\n- Shortid\n- Uuid\n- Axios\n- Commander\n- Express-flash\n- Passport-github2\n- Passport-local\n- Path\n- Swagger-jsdoc\n- Swagger-ui-express\n- Sweetalert2\n\n### Instalación\n\n```bash\nnpm install\n```\n\n### Ejecución\n\n```bash\nnpm run dev\n```\n\n### Documentación\n\n- [Documentación de la API](https://documenter.getpostman.com/view/17692129/UUy39U8o)\n- [Documentación de la API en Swagger](https://app.swaggerhub.com/apis-docs/Drako01/eCommerce/1.0.0)\n\n### Repositorio\n\n- [Repositorio en GitHub](",
-  "author": "Alejandro Daniel Di Stefano",
+  "readme": "",
+  "author": "Javier Rodriguez",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Drako01/backend-AlejandroDiStefano/issues"
+    "url": "https://github.com/javierrodriguez4/Programacion-Backend/issues"
   },
-  "homepage": "https://github.com/Drako01/backend-AlejandroDiStefano#readme",
+  "homepage": "",
   "dependencies": {
     "@faker-js/faker": "^8.0.2",
     "axios": "^1.4.0",
